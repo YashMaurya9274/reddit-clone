@@ -27,7 +27,7 @@ const Home: NextPage = () => {
       <div className="flex">
         <Feed />
 
-        <div className="sticky top-16 mx-5 hidden h-fit min-w-[300px] rounded-md border border-gray-300 bg-white lg:inline">
+        <div className="sticky top-36 mx-5 mt-5 hidden h-fit min-w-[300px] rounded-md border border-gray-300 bg-white lg:inline">
           <p className="text-md mb-1 p-4 pb-3 font-bold">Top Communities</p>
 
           <div>
