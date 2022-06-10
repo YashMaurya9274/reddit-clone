@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .icon {
+    @apply h-9 w-6 cursor-pointer rounded-sm md:w-9 md:p-1 md:hover:bg-gray-100;
+  }
+
+  .voteButtons {
+    @apply h-6 w-6 rounded-md p-1 hover:bg-gray-200;
+  }
+
+  .postButtons {
+    @apply flex cursor-pointer items-center space-x-1 rounded-sm p-2 text-sm font-semibold hover:bg-gray-100;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  overflow-y: scroll;
+}
+
+/* Hide scroll bar for chrome, safari and opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scroll bar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
